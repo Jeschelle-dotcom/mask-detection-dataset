@@ -26,9 +26,9 @@ def xml_to_darknet(path):
             class_name =  node.find('name').text
 
             if(class_name == 'without_mask'):
-                object_['class_'] = '0'
+                object_['class_'] = 'without_mask'
             elif(class_name == 'with_mask'):
-                object_['class_'] = '1'
+                object_['class_'] = 'with_mask'
             else:
                 object_['class_'] = '2'
 
